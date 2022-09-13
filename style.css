@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+h2 {
+    font-size: 4.5rem;
+    font-family: "Fraunces", serif;
+}
+.hero {
+    background-color: hsl(30, 38%, 92%);
+}
+.card-container {
+    min-height: 100vh;
+    display: flex;
+}
+.card {
+    display: flex;
+    background-color: white;
+    width: 45%;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.img-desktop {
+    object-fit: cover;
+    width: 50%;
+}
+.img-mobile {
+    display: none;
+}
+.des {
+    width: 50%;
+    padding: 3rem;
+}
+.des p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding: 1rem 0 2.5rem 0;
+    font-size: 1.6rem;
+    color: hsl(228, 12%, 48%);
+}
+.des h2 {
+    line-height: 0.9;
+}
+.des p {
+    padding: 3rem 0 2rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+}
+.price {
+    padding: 1rem 0 3rem 0;
+    position: relative;
+}
+.price span {
+    font-size: 3.5rem;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+.price del {
+    font-size: 2rem;
+    padding-left: 2.5rem;
+    position: absolute;
+    top: 25%;
+}
+button {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+button img {
+    width: 2.2rem;
+    margin-bottom: -0.3rem;
+    margin-right: 1rem;
+}
+
+button:hover {
+    background-color: hsl(158, 63%, 18%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    .card {
+        flex-direction: column;
+        width: 80%;
+    }
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        display: block;
+    }
+    .des {
+        width: 100%;
+    }
+}
